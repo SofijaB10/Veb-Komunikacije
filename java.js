@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   return ordersDiv.innerHTML;
   }
-
- window.fbAsyncInit = function() {
+  
+  window.fbAsyncInit = function() {
     FB.init({
       appId: '864994025657199', 
       autoLogAppEvents: true,
@@ -95,3 +95,10 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log("Facebook Like/Share button clicked!");
     }
   });
+
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-972K80YZXL');
