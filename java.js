@@ -70,4 +70,29 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   return ordersDiv.innerHTML;
   }
+
+ window.fbAsyncInit = function() {
+    FB.init({
+      appId: '864994025657199', 
+      autoLogAppEvents: true,
+      xfbml: true,
+      version: 'v17.0'
+    });
+  };
+
+  const twitterButton = document.querySelector('.twitter-share-button');
+  twitterButton.addEventListener('click', function() {
+    console.log("Twitter share button clicked!");
+  });
+
+  const linkedInButton = document.querySelector('[type="IN/Share"]');
+  linkedInButton.addEventListener('click', function() {
+    console.log("LinkedIn share button clicked!");
+  });
+
+  document.body.addEventListener('click', function(event) {
+    if (event.target.closest('.fb-like')) {
+      console.log("Facebook Like/Share button clicked!");
+    }
+  });
   
