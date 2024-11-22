@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Cafe, Online-Cafe, Online, narucivanje kafe, kafa, kafic, espresso, cappuccino, latte, 
+    personalizovana kafa, online narucivanje kafe, kafa cena, kafanica, kafici, kafa cenoteka">
+    <meta name="title" content="Online-Cafe">
+    <meta name="copyright" content="Sofija Bozic">
+    <meta name="description" content="Naručite najbolju kafu sa brzom dostavom. Otkrijte naš asortiman espresso-a, latte-a i cappuccino-a.
+     Dostupno odmah!">
+     <meta name="robots" content="index, follow">
+  <title>Online-Cafe</title>
+  
+  <script src="java.js"></script>
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <h1 id="hello">Dobro došli u naš Cafe! Naručite Online najbolju kafu u gradu!</h1>
+
+  <h2>Espresso, latte i cappuccino - Izbor najboljih kafa za vas.</h2>
+  <p>Naša ponuda kafa uključuje najpopularnije vrste kao što su espresso, latte i cappuccino. Bez obzira na to koji tip kafe volite,
+    mi imamo nešto za vas. Naravno, sve naše kafe su dostupne sa različitim nivoima šećera i dodatnim mlekom po vašem izboru.</p>
+  <h2>Kako naručiti najbolju kafu sa dostavom u gradu?</h2>
+  <p>Proces naručivanja je jednostavan. Izaberite tip kafe, odredite nivo Šećera i dodajte mleko ako želite.
+    Vašu kafu dostavljamo na adresu u najkraćem mogućem roku.</p>
+  
+  <form id="orderForm">
+    <label for="tipKafe">Izaberite tip kafe:</label>
+    <select id="tipKafe">
+      <option value="espresso">Espresso</option>
+      <option value="latte">Latte</option>
+      <option value="cappuccino">Cappuccino</option>
+    </select><br>
+    <label for="nivoSecera">Odaberite nivo šećera:</label>
+    <input type="number" id="nivoSecera" min="0" max="5" value="2"><br>
+    <label for="mleko">Dodati mleko:</label>
+    <input type="checkbox" id="mleko"><br>
+    <button type="button" onclick="submitOrder()">Potvrdi narudžbu</button>
+  </form>
+  
+  <div id="orders"></div>
+  <a href="https://sr.wikipedia.org/wiki/Espreso" title="Saznajte više o espresso kafi">Saznajte više o espresso kafi</a>
+  <img src="img/espresso.jpg" alt="Espresso kafa u šolji sa kremom" />
+  <a href="https://sr.wikipedia.org/wiki/Kafa_late" title="Pročitajte više o Latte kafi">Saznajte više o Latte kafi</a>
+  <img src="img/latte.jpeg" alt="Latte kafa sa penastim mlekom" />
+  <a href="https://sr.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D1%83%D1%87%D0%B8%D0%BD%D0%BE" title="Upoznajte cappuccino kafu">Upoznajte cappuccino kafu</a>
+  <img src="img/capss.jpg" alt="Cappuccino sa šlagom" />
+  <ul id="lista"></ul>
+  
+  </body>
+  </html>

@@ -1,0 +1,173 @@
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("img/coffee2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#lista {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#lista li {
+    background-color: #f1efefac;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+#lista li:hover {
+    background-color: rgba(165, 42, 42, 0.721);
+    cursor: pointer;
+}
+
+#orderForm {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+input[type="number"], input[type="checkbox"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #8b4513;
+}
+
+#orders {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.kafa {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.kafa:hover {
+    transform: scale(1.05);
+}
+
+img {
+  width: 100%;
+  max-width: 300px; 
+  height: auto;  
+  object-fit: cover;  
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+a {
+    color: brown;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: none;
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+#image-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#image-links a {
+    text-align: center;
+    flex-basis: 30%;
+}
+
+#image-links img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    #orderForm {
+        max-width: 90%;
+    }
+    #orders {
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    #image-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #image-links a {
+        margin-bottom: 20px;
+    }
+}
