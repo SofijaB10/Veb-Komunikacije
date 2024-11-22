@@ -95,4 +95,9 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log("Facebook Like/Share button clicked!");
     }
   });
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-972K80YZXL');
   
