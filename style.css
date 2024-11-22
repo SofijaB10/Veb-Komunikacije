@@ -151,6 +151,10 @@ a:hover {
     margin-bottom: 10px;
 }
 
+#fb-root {
+    text-align: center;
+}
+
 @media (max-width: 600px) {
     #orderForm {
         max-width: 90%;
