@@ -1,0 +1,80 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("img/coffee2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: brown;
+  }
+
+  #lista {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #lista li {
+    background-color: #f1efefac;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  #lista li:hover {
+    background-color: rgba(165, 42, 42, 0.721);
+  }
+
+  #orderForm {
+    background-color: #ffffff4c;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="number"],
+  input[type="checkbox"] {
+    margin-bottom: 10px;
+  }
+
+  button {
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #8b4513;
+  }
+
+  #orders {
+    background-color: #ffffff75;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .kafa {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
